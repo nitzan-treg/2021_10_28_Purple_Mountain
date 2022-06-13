@@ -1,17 +1,14 @@
-#  Polar Trail
-This is an experiment with curves and polar coordinates, I tried to create an interesting animation by animating the U, V or Radius compounents of the Polar Coordinates
+#  Purple Mountain
 
-<img alt = "gif" src="Images/2021_10_16_polar_trail_1.gif">
-<img alt = "gif" src="Images/2021_10_16_polar_trail_2.gif">
-<img src="Images/2021_10_16_polar_trail.png">
+This is an experiment about generating noise from the length of the Position vector.
+the project is rendered in Redshift.
+<img alt = "gif" src="Images/Purple_Mountain.gif">
 
-The curves were created in a for() loop inside Point VOP, in every loop each point would sample a Curl noise, add it to its current position and add a new point in said position.
+settings time to offset the noise will result in "pushing" away the noise from the origin
+<img src="Images/Purple_Mountain_flipbook.gif">
 
-<img src="Images/Curl_Noise_Trail.png">
-
-Afterward I would normalize the Position attribute, convert it to polar cordiantes, add the world and polar position togerher, while animating the world position. 
-<img src="Images/Polar_Deform.png">
+The result by default is quiet interesting right of the bat, in order to break the shape I layered noises on top of each other
+<img src="Images/Height Setup.png">
 
 Full Node Tree:
 <img src="Images/Node Tree.png">
-
